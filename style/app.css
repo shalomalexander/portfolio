@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  font-family: 'Poppins';
+  font-size: large;
+  background-image: url("../asset/PNG/Bubbles.png");
+  background-color: #f2f2f2;
+  background-size: cover;
+  
+}
+
+.header {
+    height: 50px;
+    position: fixed;
+}
+
+ul {
+    padding: 0px;
+    padding-left: 150px;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+.main {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.headline {
+    flex: 8;
+    position: relative;
+    padding-top: 162px;
+    padding-left: 150px;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight:bolder;
+    
+}
+
+p {
+    font-weight: 800;
+    font-size: larger;
+    margin-top: -30px;
+}
+
+.profile_picture {
+    position: relative;
+    flex: 4;
+    float: right;
+    height:auto;
+    width: 50%;
+}
+
+img {
+    height: 768px;
+    float: right;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width:1000px) {
+
+    .headline {
+        flex: 8;
+        position: relative;
+        padding-top: 162px;
+        padding-left: 162px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        font-weight:bolder;
+        
+    }
+    
+    p {
+        font-weight: 800;
+        font-size: medium;
+        margin-top: -30px;
+    }
+
+    .profile_picture {
+        position: relative;
+        flex: 4;
+        float: right;
+        height:auto;
+        width: 50%;
+    }
+
+    img {
+        height: 589px;
+        float: right;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+    .headline {
+        flex: auto;
+        position: relative;
+        padding: 20px 10px 0px 10px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    h1 {
+        font-size: 39px;
+        font-weight:bolder;
+    }
+    
+    p {
+        font-weight: 800;
+        font-size: small;
+        margin-top: -30px;
+    }
+
+    .profile_picture {
+        position: relative;
+        flex: auto;
+        float: right;
+        height:auto;
+        width: 100%;
+    }
+
+    img {
+        height: 589px;
+        float: right;
+        margin-bottom: 0px;
+    }
+}
+
+
