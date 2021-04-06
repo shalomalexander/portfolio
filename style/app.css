@@ -43,7 +43,7 @@ li {
 
 .main {
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
 }
 
@@ -82,6 +82,11 @@ img {
 }
 
 @media only screen and (max-width:1000px) {
+    .main {
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+      }
 
     ul {
         padding: 0px 50px 10px 50px;
