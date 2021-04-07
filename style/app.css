@@ -26,12 +26,11 @@ body {
 
 .header-navigation {
     height: auto;
-    
 }
 
 ul {
     padding: 0px;
-    padding-left: 150px;
+    padding-left: 80px;
 }
 
 li {
@@ -51,7 +50,7 @@ li {
     flex: 8;
     position: relative;
     padding-top: 162px;
-    padding-left: 150px;
+    padding-left: 80px;
 }
 
 h1 {
@@ -81,7 +80,7 @@ img {
     margin-bottom: 0px;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
     .main {
         height: 100%;
         overflow: scroll;
@@ -89,7 +88,7 @@ img {
       }
 
     ul {
-        padding: 0px 50px 10px 50px;
+        padding: 0px 50px 10px 80px;
     }
 
     li {
@@ -101,7 +100,7 @@ img {
         flex: 8;
         position: relative;
         padding-top: 162px;
-        padding-left: 162px;
+        padding-left: 80px;
     }
     
     h1 {
@@ -120,21 +119,80 @@ img {
         position: relative;
         flex: 4;
         float: right;
-        height:auto;
-        width: 50%;
+        height: auto;
+        width: 100%;
     }
 
     img {
-        height: 589px;
+        height: 700px;
         float: right;
         margin-bottom: 0px;
     }
 }
 
-@media only screen and (max-width:768px) {     
+@media only screen and (max-width:768px) {
+    .main {
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+      }
+
+    ul {
+        padding: 0px 50px 10px 80px;
+    }
+
     li {
         font-size: small;
         margin-right: 10px;
+    }
+
+    .headline {
+        flex: 8;
+        position: relative;
+        padding-top: 162px;
+        padding-left: 80px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        font-weight:bolder;
+        
+    }
+    
+    p {
+        font-weight: 800;
+        font-size: medium;
+        margin-top: -30px;
+    }
+
+    .profile_picture {
+        position: relative;
+        flex: 4;
+        float: right;
+        height: auto;
+        width: 100%;
+    }
+
+    img {
+        height: 600px;
+        float: right;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:481px) {  
+
+    .header-navigation {
+        height: auto; 
+    }
+
+    ul {
+        padding: 0px 50px 10px 20px;
+    }
+
+    li {
+        font-size: small;
+        margin-right: 7px;
     }
 
     .main {
