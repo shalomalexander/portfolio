@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -8,12 +12,31 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  font-family: "Poppins";
-  font-size: large;
+  font-family: "Raleway";
+  font-size: medium;
   background-image: url("../asset/PNG/Bubbles.png");
   background-color: #f2f2f2;
   background-size: cover;
 }
+
+/* This part of "a" tag is used from https://codepen.io/geoffgraham/pen/bxEVEN*/
+a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
 
 button {
   padding: 0px;
@@ -45,7 +68,7 @@ ul {
 li {
   list-style: none;
   float: left;
-  font-weight: bolder;
+  font-weight: 500;
   margin-right: 20px;
 }
 
@@ -64,12 +87,12 @@ li {
 
 h1 {
   font-size: 65px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 p {
-  font-weight: 800;
-  font-size: larger;
+  font-weight: 500;
+  font-size: medium;
   margin-top: -30px;
 }
 
@@ -113,28 +136,15 @@ img {
 
   h1 {
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 700;
   }
 
   p {
-    font-weight: 800;
+    font-weight: 500;
     font-size: medium;
     margin-top: -30px;
   }
 
-  .profile_picture {
-    position: relative;
-    flex: 4;
-    float: right;
-    height: auto;
-    width: 100%;
-  }
-
-  img {
-    height: 700px;
-    float: right;
-    margin-bottom: 0px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -162,11 +172,11 @@ img {
 
   h1 {
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 700;
   }
 
   p {
-    font-weight: 800;
+    font-weight: 500;
     font-size: medium;
     margin-top: -30px;
   }
@@ -250,11 +260,11 @@ img {
 
   h1 {
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 700;
   }
 
   p {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 10px;
     margin-top: -10px;
   }
@@ -271,5 +281,102 @@ img {
     height: 535px;
     float: right;
     margin-bottom: 0px;
+  }
+}
+
+
+/* About Me Page CSS starts from here */
+.profile_picture2 {
+  position: relative;
+  flex: 4;
+  float: left;
+  height: auto;
+  width: 50%;
+}
+
+img {
+  height: 768px;
+  float: right;
+  margin-bottom: 0px;
+}
+
+.about-me-information {
+  padding-bottom: 10px;
+  margin-left: -80px;
+}
+
+.about-me-heading {
+  flex: auto;
+  position: relative;
+  padding-top: 0px;
+  padding-left: 80px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.about-me {
+  font-size: xx-large;
+  margin-top: 50px;
+  margin-left: -60px;
+}
+
+.card1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card2 {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 10px;
+  font-weight: 700;
+  font-size: large;
+}
+
+p {
+  margin: 10px;
+  justify-self: center;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile_picture2 {
+    position: relative;
+    flex: 4;
+    float: left;
+    height: auto;
+    width: 100%;
+  }
+
+  .profile {
+    margin: 0px;
+    height: 600px;
+    width: auto;
+    padding-top: 100px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .about-me{
+    text-align: center;
+  }
+
+  .profile_picture2 {
+    position: relative;
+    flex: 4;
+    float: left;
+    height: auto;
+    width: 100%;
+    display: none;
   }
 }
