@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,36 +8,45 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: large;
   background-image: url("../asset/PNG/Bubbles.png");
   background-color: #f2f2f2;
   background-size: cover;
-  
+}
+
+button {
+  padding: 0px;
+  border: none;
+  background: none;
 }
 
 .header {
-    height: 50px;
-    position: fixed;
-    width: 100%;
-    background-color: #f2f2f2;
-    z-index: 1;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 1;
+}
+
+.menu {
+  display: none;
 }
 
 .header-navigation {
-    height: auto;
+  height: auto;
 }
 
 ul {
-    padding: 0px;
-    padding-left: 80px;
+  padding: 0px;
+  padding-left: 80px;
 }
 
 li {
-    list-style: none;
-    float: left;
-    font-weight: bolder;
-    margin-right: 20px;
+  list-style: none;
+  float: left;
+  font-weight: bolder;
+  margin-right: 20px;
 }
 
 .main {
@@ -47,193 +56,220 @@ li {
 }
 
 .headline {
+  flex: 8;
+  position: relative;
+  padding-top: 162px;
+  padding-left: 80px;
+}
+
+h1 {
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+p {
+  font-weight: 800;
+  font-size: larger;
+  margin-top: -30px;
+}
+
+.profile_picture {
+  position: relative;
+  flex: 4;
+  float: right;
+  height: auto;
+  width: 50%;
+  z-index: 2;
+}
+
+img {
+  height: 768px;
+  float: right;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+  }
+
+  ul {
+    padding: 0px 50px 10px 80px;
+  }
+
+  li {
+    font-size: small;
+    margin-right: 10px;
+  }
+
+  .headline {
     flex: 8;
     position: relative;
     padding-top: 162px;
     padding-left: 80px;
-}
+  }
 
-h1 {
-    font-size: 65px;
-    font-weight:bolder;
-    
-}
+  h1 {
+    font-size: 50px;
+    font-weight: bolder;
+  }
 
-p {
+  p {
     font-weight: 800;
-    font-size: larger;
+    font-size: medium;
     margin-top: -30px;
-}
+  }
 
-.profile_picture {
+  .profile_picture {
     position: relative;
     flex: 4;
     float: right;
-    height:auto;
-    width: 50%;
-    z-index: 2;
-}
+    height: auto;
+    width: 100%;
+  }
 
-img {
-    height: 768px;
+  img {
+    height: 700px;
     float: right;
     margin-bottom: 0px;
+  }
 }
 
-@media only screen and (max-width:1024px) {
-    .main {
-        height: 100%;
-        overflow: scroll;
-        display: flex;
-      }
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+  }
 
-    ul {
-        padding: 0px 50px 10px 80px;
-    }
+  ul {
+    padding: 0px 50px 10px 80px;
+  }
 
-    li {
-        font-size: small;
-        margin-right: 10px;
-    }
+  li {
+    font-size: small;
+    margin-right: 10px;
+  }
 
-    .headline {
-        flex: 8;
-        position: relative;
-        padding-top: 162px;
-        padding-left: 80px;
-    }
-    
-    h1 {
-        font-size: 50px;
-        font-weight:bolder;
-        
-    }
-    
-    p {
-        font-weight: 800;
-        font-size: medium;
-        margin-top: -30px;
-    }
+  .headline {
+    flex: 8;
+    position: relative;
+    padding-top: 162px;
+    padding-left: 80px;
+  }
 
-    .profile_picture {
-        position: relative;
-        flex: 4;
-        float: right;
-        height: auto;
-        width: 100%;
-    }
+  h1 {
+    font-size: 50px;
+    font-weight: bolder;
+  }
 
-    img {
-        height: 700px;
-        float: right;
-        margin-bottom: 0px;
-    }
+  p {
+    font-weight: 800;
+    font-size: medium;
+    margin-top: -30px;
+  }
+
+  .profile_picture {
+    position: relative;
+    flex: 4;
+    float: right;
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    height: 600px;
+    float: right;
+    margin-bottom: 0px;
+  }
 }
 
-@media only screen and (max-width:768px) {
-    .main {
-        height: 100%;
-        overflow: scroll;
-        display: flex;
-      }
+@media only screen and (max-width: 481px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
 
-    ul {
-        padding: 0px 50px 10px 80px;
-    }
+  .header-navigation {
+    height: 100px;
+    display: none; /*this variable is changeable from javascript */
+    padding: 0px;
+    margin: 0px;
+  }
 
-    li {
-        font-size: small;
-        margin-right: 10px;
-    }
+  .menu {
+    display: flex;
+    width: auto;
+  }
 
-    .headline {
-        flex: 8;
-        position: relative;
-        padding-top: 162px;
-        padding-left: 80px;
-    }
-    
-    h1 {
-        font-size: 50px;
-        font-weight:bolder;
-        
-    }
-    
-    p {
-        font-weight: 800;
-        font-size: medium;
-        margin-top: -30px;
-    }
+  .menu-icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+  }
 
-    .profile_picture {
-        position: relative;
-        flex: 4;
-        float: right;
-        height: auto;
-        width: 100%;
-    }
+  ul {
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    text-align: center;
+  }
 
-    img {
-        height: 600px;
-        float: right;
-        margin-bottom: 0px;
-    }
+  li {
+    font-size: small;
+    float: none;
+    margin: 0px;
+    animation-name: list-element;
+    animation-duration: 1s;
+  }
+
+  @keyframes list-element {
+      0% {opacity: 0; }
+      25% {opacity: 0.25;}
+      50% {opacity: 0.5;}
+      75% {opacity: 0.75;}
+      100% {opacity: 1;}
+  }
+
+
+  .main {
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline {
+    flex: auto;
+    position: relative;
+    padding: 20px 10px 0px 10px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-weight: 800;
+    font-size: 10px;
+    margin-top: -10px;
+  }
+
+  .profile_picture {
+    position: relative;
+    flex: auto;
+    float: right;
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    height: 535px;
+    float: right;
+    margin-bottom: 0px;
+  }
 }
-
-@media only screen and (max-width:481px) {  
-
-    .header-navigation {
-        height: auto; 
-    }
-
-    ul {
-        padding: 0px 50px 10px 20px;
-    }
-
-    li {
-        font-size: small;
-        margin-right: 7px;
-    }
-
-    .main {
-        height: 100%;
-        overflow: scroll;
-        display: flex;
-        flex-direction: column;
-      }
-
-    .headline {
-        flex: auto;
-        position: relative;
-        padding: 20px 10px 0px 10px;
-        text-align: center;
-        margin-top: 50px;
-    }
-    
-    h1 {
-        font-size: 20px;
-        font-weight:bolder;
-    }
-    
-    p {
-        font-weight: 800;
-        font-size: 10px;
-        margin-top: -10px;
-    }
-
-    .profile_picture {
-        position: relative;
-        flex: auto;
-        float: right;
-        height:auto;
-        width: 100%;
-    }
-
-    img {
-        height: 535px;
-        float: right;
-        margin-bottom: 0px;
-    }
-}
-
-
