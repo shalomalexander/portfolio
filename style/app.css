@@ -42,6 +42,7 @@ button {
   padding: 0px;
   border: none;
   background: none;
+  outline: none;
 }
 
 .header {
@@ -227,9 +228,11 @@ img {
   }
 
   li {
+    font-weight: 600;
     font-size: small;
     float: none;
     margin: 0px;
+    padding-bottom: 20px;
     animation-name: list-element;
     animation-duration: 1s;
   }
@@ -292,12 +295,6 @@ img {
   float: left;
   height: auto;
   width: 50%;
-}
-
-img {
-  height: 768px;
-  float: right;
-  margin-bottom: 0px;
 }
 
 .about-me-information {
