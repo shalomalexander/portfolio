@@ -377,3 +377,65 @@ p {
     display: none;
   }
 }
+
+
+/* Contact Me Page CSS */
+
+.black {
+  background-color: #293436;
+  background-image: url("../asset/PNG/Bubbles.png");
+}
+
+.white {
+  color: white;
+}
+
+.white-list {
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  padding: 200px;
+}
+
+.button {
+  position: relative;
+  background-color: aqua;
+  background-image: linear-gradient(to right, rgb(103, 212, 255) , rgb(145, 255, 150));
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  flex: 8;
+  position: relative;
+  padding-top: 162px;
+  text-align: center;
+  margin: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+@media only screen and (max-width: 481px) {
+.feedback {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.white-list {
+  color: black;
+}
+
+.menu-icon-white {
+  background-color: white;
+}
+}

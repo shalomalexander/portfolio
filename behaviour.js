@@ -5,8 +5,7 @@ function toggleFunction() {
     if (x.style.display === "none") {
       x.style.display = "block";
       //main.style.backgroundColor = "whitesmoke";
-      main.style.opacity = "10%"
-      
+      main.style.opacity = "10%";
      // x.style.visibility = "visible";
     } else {
       x.style.display = "none";
