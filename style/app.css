@@ -405,12 +405,19 @@ p {
 
 .button {
   position: relative;
-  background-color: aqua;
   background-image: linear-gradient(to right, rgb(103, 212, 255) , rgb(145, 255, 150));
   padding: 10px;
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
+  height: 60px;
   margin-bottom: 20px;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, rgb(145, 255, 150) , rgb(103, 212, 255));
+  cursor: pointer;
+  width: 95%;
+  height: 65px;
 }
 
 .feedback {
@@ -541,6 +548,10 @@ p {
   margin: 20px;
   padding: 4px;
   background-image: linear-gradient(to right, rgb(255, 145, 0) , rgb(253, 255, 138));
+}
+
+.container .button:hover {
+  background-image: linear-gradient(to right, rgb(253, 255, 138) , rgb(255, 145, 0));
 }
 
 @media only screen and (max-width: 949px) {
