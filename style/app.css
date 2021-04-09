@@ -86,10 +86,37 @@ li {
   padding-left: 80px;
 }
 
+.main .headline .main-headline h1 {
+  background-image: -webkit-linear-gradient(left, rgb(255, 145, 0) , rgb(253, 255, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: shalom;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shalom {
+  0% {
+    background-image: -webkit-linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
+  }
+  25% {
+    background-image: -webkit-linear-gradient(left, rgb(218, 34, 255) , rgb(127, 112, 255));
+  }
+  50% {
+    background-image: -webkit-linear-gradient(left, rgb(181, 69, 255) , rgb(69, 195, 253));
+  }
+  75% {
+    background-image: -webkit-linear-gradient(left, rgb(113, 165, 243) , rgb(233, 70, 248));
+  }
+  100% {
+    background-image: -webkit-linear-gradient(left, rgb(117, 140, 243) , rgb(255, 5, 255) );
+  }
+  
+}
+
 h1 {
   font-size: 65px;
   font-weight: 700;
-  background-color: linear-gradient(black, blue);
 }
 
 p {
@@ -263,7 +290,7 @@ img {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
   }
 
@@ -526,6 +553,7 @@ p {
 .experience-list .card1 {
   position: relative;
   border: white solid 2px;
+  text-align: left;
 }
 
 .container {
