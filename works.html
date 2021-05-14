@@ -27,31 +27,135 @@
     <div class="main black" id="main-id">
         <div class="work-experience">
             <div class="work">
+
                 <div class="headline-work white">
                     <h1><a class="white">My Experiments 🛠️</a><br></h1>
                 </div>
+                <div id="modal-ehr" class="modal-1">
+                    <div class="container">
+                        <h2>Electronic Health Record Management System</h2>
+                        <button id="ehr" onclick="toggleModal(this.id)" class="button">
+                            <h3>X</h3>
+                        <button>
+                    </div>
+                    <hr/>
+                    <p><strong>Tech-Stack:</strong> React-JS, Django Rest Framework, PostgreSQL</p>
+                    <p><strong>Deployment-Stack:</strong> PythonAnywhere for hosting the DRF backend REST API's 
+                        and Netlify for React JS Frontend</p>
+                    <p><strong>Note:</strong>This project can be shown on personal request to prevent Unauthorized Registrations on the platform.</p>
+                </div> 
+           
+
+                <div id="modal-google-meet-tracker" class="modal-1">
+                    <div class="container">
+                        <h2>Automated Google Meets Attendance Tracker (GMAT 1.0)</h2>
+                        <button id="google-meet-tracker" onclick="toggleModal(this.id)" class="button">
+                            <h3>X</h3>
+                        <button>
+                    </div>    
+                    <hr/>
+                    <p><strong>Tech-Stack:</strong>Python, PyQT-4 Framework, Selenium</p>
+                    <p>It is a Desktop Application which was created to automatically mark attendance of the student who are present 
+                        in a Google Meets meeting. It utilizes web-scraping to fetch the students name. It marks PRESENT/ABSENT based 
+                        on the duration of time a student is there in the meeting. When the meeting is over, it generates an excel sheet
+                        and sends the excel sheet to the inputed e-mail address. </p>
+                </div> 
+                
+                <div id="modal-wol" class="modal-1">
+                    <div class="container">
+                        <h2>Webathon Contest E-Learning Platform</h2>
+                        <button id="wol" onclick="toggleModal(this.id)" class="button">
+                            <h3>X</h3>
+                        <button>
+                    </div>
+                    <hr/>
+                    <p><strong>Tech-Stack:</strong> HTML, CSS, Javascript</p>
+                    <p><strong>Deployment-Stack:</strong> Github Pages</p>
+                    <p>This project is a simple E-learning Platform, were one can find resources on Python, Java, Ruby and HTML.
+                        It was created during the Week of Learning Webathon Contest conducted by Progate at our College.
+                    </p>
+                </div> 
+
+
+                <div id="modal-meal" class="modal-1">
+                    <div class="container">
+                        <h2>Meal Recipe Web App</h2>
+                        <button id="meal" onclick="toggleModal(this.id)" class="button">
+                            <h3>X</h3>
+                        <button>
+                    </div>
+                    <hr/>
+                    <p><strong>Tech-Stack:</strong>React JS</p>
+                    <p><strong>Deployment-Stack:</strong> Netlify</p>
+                    <p>This project is a Web based Meal Recipe App. Which utilizes external Edamam API to fetch meal recipe information,
+                        and represent it in a pleasant fashion.
+                    </p>
+                </div> 
+
                 <div class="work-list">
                     <ul>
                         <li>
+                            <div class="card1" >
+                               <h2>Electronic Health Record Management System (Fullstack)</h2>
+                               <div class="container">
+                                    <button id="ehr" onclick="toggleModal(this.id)" class="button">
+                                            <h3>View</h3>
+                                    <button>
+                                </div>    
+                            </div>
+                        </li>
+                        
+                        <li>
                             <div class="card1">
                                 <h2>Automated Google Meets Attendance Tracker (GMAT 1.0)</h2>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card1">
-                                <h2>Meal Recipe App</h2>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card1">
-                                <h2>Personal Expenses App</h2>
+                                <div class="container">
+                                    <button class="button">
+                                        <a href="https://github.com/shalomalexander/Google_Meets_Attendance_Tracker">
+                                            <h3>KNOCK</h3>
+                                        </a>
+                                    <button>
+                                    <button id="google-meet-tracker" onclick="toggleModal(this.id)" class="button">
+                                        <h3>View</h3>
+                                    <button>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="card1">
                                 <h2>Webathon Contest E-Learning Platform</h2>
+                                <div class="container">
+                                    <button class="button">
+                                        <a href="https://shalomalexander.github.io/wolmgmcoet/">
+                                            <h3>KNOCK</h3>
+                                        </a>
+                                    <button>
+                                    <button id="wol" onclick="toggleModal(this.id)" class="button">
+                                        <h3>View</h3>
+                                    <button>
+                                </div>
                             </div>
                         </li>
+                        <li>
+                            <div class="card1">
+                                <h2>Meal Recipe Web Application</h2>
+                                <div class="container">
+                                    <!-- <button class="button">
+                                        <a href="https://shalomalexander.github.io/wolmgmcoet/">
+                                            <h3>KNOCK</h3>
+                                        </a>
+                                    <button> -->
+                                    <button id="meal" onclick="toggleModal(this.id)" class="button">
+                                        <h3>View</h3>
+                                    <button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="card1">
+                                <h2>Personal Expenses App</h2>
+                                <p><strong>Tech-Stack:</strong> Flutter Framework</p>
+                            </div>
+                        </li> -->
                     </ul>
                 </div>
             </div>
