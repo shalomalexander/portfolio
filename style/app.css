@@ -19,6 +19,8 @@ body {
   background-size: cover;
 }
 
+
+
 /* This part of "a" tag is used from https://codepen.io/geoffgraham/pen/bxEVEN*/
 a {
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
