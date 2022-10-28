@@ -31,7 +31,7 @@ var modal3 = false;
 var modal4 = false;
 
 function toggleModal(id) {
-  
+  console.log(id);
   if(id==="ehr") {
     modal1 = !modal1;
     var element = document.getElementById("modal-ehr");

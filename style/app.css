@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wghtfamil@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 
 
 * {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0px;
   padding: 0px;
-  height: 100vh;
+  /* height: auto; */
   font-family: "Raleway";
   font-size: medium;
-  background-image: url("../asset/PNG/Bubbles.png");
-  background-color: #f2f2f2;
-  background-size: cover;
+  /* background-image: url("../asset/PNG/Bubbles.png"); */
+  background-color: #0d0d0d;
+  overflow: scroll;
 }
 
 
@@ -27,17 +31,17 @@ a {
 	background-position: 0 100%;
 	background-repeat: repeat-x;
 	background-size: 3px 3px;
-  color: #000;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
-}
+} */
 
 
 button {
@@ -51,7 +55,7 @@ button {
   height: 50px;
   position: fixed;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #000000;
   z-index: 1;
 }
 
@@ -65,7 +69,7 @@ button {
 
 ul {
   padding: 0px;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 li {
@@ -77,15 +81,64 @@ li {
 
 .main {
   height: 100%;
-  overflow: scroll;
   display: flex;
+  align-items: center;
+}
+
+.footer {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background: #1d1d1d;
+}
+
+.footer p {
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.footer div {
+  padding: 30px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer ul li {
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+}
+
+.footer ul li img {
+  height: 30px;
+  background: rgb(51, 51, 51);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.fade-tag {
+  opacity: 0.09;
+  transition: all 1s;
+}
+
+.fade-tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .headline {
   flex: 8;
   position: relative;
-  padding-top: 162px;
   padding-left: 80px;
+}
+
+.main-headline {
+  color: white;
 }
 
 .main .headline .main-headline h1 {
@@ -125,33 +178,36 @@ p {
   font-weight: 500;
   font-size: medium;
   margin-top: -30px;
+  color: white;
 }
 
 .profile_picture {
   position: relative;
   flex: 4;
-  float: right;
-  height: auto;
-  width: 50%;
+  /* float: right; */
   z-index: 2;
 }
 
-img {
+.profile_picture img {
+  border-radius: 1000px;
+  height: 600px;
+}
+
+/* img {
   height: 768px;
   float: right;
   margin-bottom: 0px;
-}
+} */
 
 @media only screen and (max-width: 1024px) {
   .main {
     height: 100%;
-    overflow: scroll;
     display: flex;
   }
 
-  ul {
+  /* ul {
     padding: 0px 50px 10px 80px;
-  }
+  } */
 
   li {
     font-size: small;
@@ -181,13 +237,12 @@ img {
 @media only screen and (max-width: 768px) {
   .main {
     height: 100%;
-    overflow: scroll;
     display: flex;
   }
 
-  ul {
+  /* ul {
     padding: 0px 50px 10px 80px;
-  }
+  } */
 
   li {
     font-size: small;
@@ -262,7 +317,7 @@ img {
     font-size: small;
     float: none;
     margin: 0px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     animation-name: list-element;
     animation-duration: 1s;
   }
@@ -278,7 +333,6 @@ img {
 
   .main {
     height: 100%;
-    overflow: scroll;
     display: flex;
     flex-direction: column;
   }
@@ -327,24 +381,33 @@ img {
   width: 50%;
 }
 
+.profile_picture2 img {
+  height: 400px;
+  border-radius: 100px;
+}
+
 .about-me-information {
   padding-bottom: 10px;
   margin-left: -80px;
 }
 
 .about-me-heading {
-  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  /* flex: auto;
   position: relative;
   padding-top: 0px;
   padding-left: 80px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 10px; */
 }
 
 .about-me {
   font-size: xx-large;
   margin-top: 50px;
   margin-left: -60px;
+  color: white;
 }
 
 .card1 {
@@ -353,6 +416,7 @@ img {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+  border: 3px solid white;
 }
 
 .card2 {
@@ -373,6 +437,14 @@ p {
   margin: 10px;
   justify-self: center;
   font-size: medium;
+}
+
+.skill-box {
+  color: #000000;
+  background: linear-gradient(to left, rgb(181, 69, 255) , rgb(69, 195, 253));
+  border-radius: 2px;
+  padding: 2px 10px;
+  margin: 2px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -436,7 +508,7 @@ p {
   position: relative;
   background-image: linear-gradient(to right, rgb(103, 212, 255) , rgb(145, 255, 150));
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   width: 90%;
   height: 60px;
   margin-bottom: 20px;
@@ -547,7 +619,7 @@ p {
 
 .experience {
   /* border: white solid 3px; */
-  flex: auto;
+  /* flex: auto; */
 }
 
 .headline-experience {
@@ -566,6 +638,9 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.experience-list ul {
+  padding: 0px 40px;
 }
 
 .experience-list ul li{
@@ -597,11 +672,11 @@ p {
   height: 40px;
   margin: 20px;
   padding: 4px;
-  background-image: linear-gradient(to right, rgb(255, 145, 0) , rgb(253, 255, 138));
+  background-image: linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
 }
 
 .container .button:hover {
-  background-image: linear-gradient(to right, rgb(253, 255, 138) , rgb(255, 145, 0));
+  background-image: linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
 }
 
 .modal-1 {

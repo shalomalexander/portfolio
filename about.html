@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/app.css">
-    <link rel="stylesheet" href="style/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/app.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
     <script src="behaviour.js"></script>
     <title>Shalom's Career Portfolio</title>
-</head>
-<body onresize="toggleDisplayOfNavigation()">
+  </head>
+  <body onresize="toggleDisplayOfNavigation()">
     <div class="header">
-        <div class="menu">
-            <button onclick="toggleFunction()">
-                <img class="menu-icon" src="asset/PNG/menu.png" alt="#">
-            </button>
-        </div>
-        <div class="header-navigation" id="header-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="contact_me.html">Contact Me</a></li>
-                </ul>
-        </div>
+      <div class="menu">
+        <button onclick="toggleFunction()">
+          <img class="menu-icon" src="asset/PNG/menu.png" alt="#" />
+        </button>
+      </div>
+      <div class="header-navigation" id="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
     <div class="main" id="main-id">
-        <div class="profile_picture2">
-            <img class="profile" src="./asset/PNG/Portfolio_Picture2.png" alt="#">
-        </div>
+      <div class="profile_picture2">
+        <img class="profile" src="./asset/PNG/Portfolio_Picture2.png" alt="#" />
+      </div>
 
-        <div class="about-me-heading">
-            <h1 class="about-me">ABOUT ME 😎</h1>
-            <div class="about-me-information">
-                <div class="card1">
-                    <h2>EDUCATION</h2>
-                    <p>
-                        •BTech / Computer Science Engineering 2017-2021, MGMCoET, Noida-62, CGPA: 8.7<br>
-                        •12th Class CBSE 2017, Kerala Education Society Sr Sec School, Percentage: 87% <br>
-                        •10th Class CBSE 2015, Kerala Education Society Sr Sec School, CGPA: 9.8<br>                        
-                    </p>
-                </div>
-                <div class="card2">
-                    <h2>SKILLS</h2>
-                    <p>
-                        <strong>Language:</strong> Java, Python, intermediate HTML, CSS, JavaScript, jQuery, and AJAX<br>
-                        <strong>Other Skills:</strong> Data Structures & Algorithm, Object-Oriented Programming, Problem Solving<br>
-                        <strong>Frameworks:</strong> React JS, Django, Django REST Framework, Bootstrap<br>
-                        <strong>Databases:</strong> MySQL, PostgreSQL<br>
-                        <strong>OS:</strong> Linux (basic), Windows<br>
-                        <strong>Tools:</strong> Git, Figma<br>   
-                        <strong>Soft Skills:</strong> Good communicator and listener with great interpersonal skills along with upstanding analytical skills to adapt myself to the requirements of the situation.   <br>                   
-                    </p>
-                </div>
-                <div class="card1">
-                    <h2>ACHIEVEMENTS</h2>
-                    <p>
-                        • Winner of Techathlon 2021, Hackathon organized by IPEC, got a cash prize of Rs 7500/- <br>
-                        • Cleared HackWithInfy 2020 and got PPO for System Engineer Specialist at Infosys. <br>
-                        • Ranked 24th in the National Level Java Competition conducted on 12th July 2020 by University Academy.<br>
-                        • Ranked among the top contestant in the Intern Hunt 7.0 Competitive Programming Contest conducted by Skillenza.<br>
-                        • Technical Head of MGMCOET, Noida – 62 PARAM Technical Society.<br>                        
-                    </p>
-                </div>
-            </div>
+      <div class="about-me-heading">
+        <h1 class="about-me">ABOUT ME 😎</h1>
+        <div class="about-me-information">
+          <div class="card1">
+            <h2>EDUCATION</h2>
+            <p>
+              •BTech / Computer Science Engineering 2017-2021, MGMCoET,
+              Noida-62, CGPA: 8.7<br />
+              •12th Class CBSE 2017, Kerala Education Society Sr Sec School,
+              Percentage: 87% <br />
+              •10th Class CBSE 2015, Kerala Education Society Sr Sec School,
+              CGPA: 9.8<br />
+            </p>
+          </div>
+          <div class="card1">
+            <h2>SKILLS</h2>
+            <p>
+              <strong>Languages / Markup Languages:</strong>
+              <span class="skill-box">Java</span>
+              <span class="skill-box">Python</span>
+              <span class="skill-box">JavaScript</span>
+              <span class="skill-box">HTML</span>
+              <span class="skill-box">CSS</span>
+              <span class="skill-box">jQuery</span>
+              <span class="skill-box">AJAX</span> <br /><br />
+              <strong>Frameworks:</strong>
+              <span class="skill-box">React JS</span>
+              <span class="skill-box">Redux Toolkit</span>
+              <span class="skill-box">NodeJS</span>
+              <span class="skill-box">Express</span>
+              <span class="skill-box">Django</span>
+              <span class="skill-box">Bootstrap</span>
+              <span class="skill-box">Material UI</span> <br /><br />
+              <strong>Databases:</strong>
+              <span class="skill-box">PostgreSQL</span>
+              <span class="skill-box">MongoDB</span><br /> <br />
+
+              <strong>Other Skills:</strong> Data Structures & Algorithm,
+              Object-Oriented Programming, Problem Solving<br />
+            
+              <strong>Tools:</strong> Git, Figma<br />
+              <strong>Soft Skills:</strong> Good communicator and listener with
+              great interpersonal skills along with upstanding analytical skills
+              to adapt myself to the requirements of the situation. <br />
+            </p>
+          </div>
+          <div class="card1">
+            <h2>ACHIEVEMENTS</h2>
+            <p>
+              • Winner of Techathlon 2021, Hackathon organized by IPEC, got a
+              cash prize of Rs 7500/- <br />
+              • Cleared HackWithInfy 2020 and got PPO for Digital Specialist
+              Engineer at Infosys. <br />
+              • Technical Head of MGMCOET, Noida – 62 PARAM Technical
+              Society.<br />
+            </p>
+          </div>
         </div>
-        
+      </div>
     </div>
-</body>
+  </body>
 </html>
