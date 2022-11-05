@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wghtfamil@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wghtfamil@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
 
 * {
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -27,10 +26,14 @@ body {
 
 /* This part of "a" tag is used from https://codepen.io/geoffgraham/pen/bxEVEN*/
 a {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 3px 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--mainColor) 0%,
+    var(--mainColor) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -142,7 +145,11 @@ li {
 }
 
 .main .headline .main-headline h1 {
-  background-image: -webkit-linear-gradient(left, rgb(255, 145, 0) , rgb(253, 255, 138));
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(255, 145, 0),
+    rgb(253, 255, 138)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-name: shalom;
@@ -152,21 +159,40 @@ li {
 
 @keyframes shalom {
   0% {
-    background-image: -webkit-linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(255, 0, 234),
+      rgb(128, 120, 243)
+    );
   }
   25% {
-    background-image: -webkit-linear-gradient(left, rgb(218, 34, 255) , rgb(127, 112, 255));
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(218, 34, 255),
+      rgb(127, 112, 255)
+    );
   }
   50% {
-    background-image: -webkit-linear-gradient(left, rgb(181, 69, 255) , rgb(69, 195, 253));
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(181, 69, 255),
+      rgb(69, 195, 253)
+    );
   }
   75% {
-    background-image: -webkit-linear-gradient(left, rgb(113, 165, 243) , rgb(233, 70, 248));
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(113, 165, 243),
+      rgb(233, 70, 248)
+    );
   }
   100% {
-    background-image: -webkit-linear-gradient(left, rgb(117, 140, 243) , rgb(255, 5, 255) );
+    background-image: -webkit-linear-gradient(
+      left,
+      rgb(117, 140, 243),
+      rgb(255, 5, 255)
+    );
   }
-  
 }
 
 h1 {
@@ -231,7 +257,6 @@ p {
     font-size: medium;
     margin-top: -30px;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -323,13 +348,22 @@ p {
   }
 
   @keyframes list-element {
-      0% {opacity: 0; }
-      25% {opacity: 0.25;}
-      50% {opacity: 0.5;}
-      75% {opacity: 0.75;}
-      100% {opacity: 1;}
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-
 
   .main {
     height: 100%;
@@ -370,7 +404,6 @@ p {
     margin-bottom: 0px;
   }
 }
-
 
 /* About Me Page CSS starts from here */
 .profile_picture2 {
@@ -441,7 +474,7 @@ p {
 
 .skill-box {
   color: #000000;
-  background: linear-gradient(to left, rgb(181, 69, 255) , rgb(69, 195, 253));
+  background: linear-gradient(to left, rgb(181, 69, 255), rgb(69, 195, 253));
   border-radius: 2px;
   padding: 2px 10px;
   margin: 2px;
@@ -460,13 +493,12 @@ p {
     margin: 0px;
     height: 600px;
     width: auto;
-    padding-top: 100px; 
+    padding-top: 100px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
-  .about-me{
+  .about-me {
     text-align: center;
   }
 
@@ -479,7 +511,6 @@ p {
     display: none;
   }
 }
-
 
 /* Contact Me Page CSS */
 
@@ -506,7 +537,11 @@ p {
 
 .button {
   position: relative;
-  background-image: linear-gradient(to right, rgb(103, 212, 255) , rgb(145, 255, 150));
+  background-image: linear-gradient(
+    to right,
+    rgb(103, 212, 255),
+    rgb(145, 255, 150)
+  );
   padding: 10px;
   border-radius: 2px;
   width: 90%;
@@ -515,7 +550,11 @@ p {
 }
 
 .button:hover {
-  background-image: linear-gradient(to right, rgb(145, 255, 150) , rgb(103, 212, 255));
+  background-image: linear-gradient(
+    to right,
+    rgb(145, 255, 150),
+    rgb(103, 212, 255)
+  );
   cursor: pointer;
   width: 95%;
   height: 65px;
@@ -538,21 +577,19 @@ p {
 }
 
 @media only screen and (max-width: 481px) {
-.feedback {
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  .feedback {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-}
+  .white-list {
+    color: black;
+  }
 
-.white-list {
-  color: black;
-}
-
-.menu-icon-white {
-  background-color: white;
-}
-
+  .menu-icon-white {
+    background-color: white;
+  }
 }
 
 /* Works Page CSS */
@@ -583,11 +620,9 @@ p {
   /* border: red solid 2px; */
   padding-bottom: 20px;
   padding-top: 20px;
-  flex:10;
+  flex: 10;
   display: flex;
   justify-content: center;
- 
- 
 }
 
 .headline-work h1 {
@@ -607,7 +642,7 @@ p {
   /* border: #f2f2f2 solid 2px; */
 }
 
-.card1 .button{
+.card1 .button {
   width: 90px;
   height: 30px;
   display: flex;
@@ -643,7 +678,7 @@ p {
   padding: 0px 40px;
 }
 
-.experience-list ul li{
+.experience-list ul li {
   margin: 0px;
 }
 
@@ -672,11 +707,11 @@ p {
   height: 40px;
   margin: 20px;
   padding: 4px;
-  background-image: linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
+  background-image: linear-gradient(left, rgb(255, 0, 234), rgb(128, 120, 243));
 }
 
 .container .button:hover {
-  background-image: linear-gradient(left, rgb(255, 0, 234) , rgb(128, 120, 243));
+  background-image: linear-gradient(left, rgb(255, 0, 234), rgb(128, 120, 243));
 }
 
 .modal-1 {
@@ -697,12 +732,11 @@ p {
 
 .active {
   pointer-events: all;
-  opacity: 1.0;
+  opacity: 1;
 }
 
-
 @media only screen and (max-width: 949px) {
-  .work-list ul{
+  .work-list ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -728,7 +762,6 @@ p {
   }
 
   .headline-experience h1 {
-    margin-left:0px;
-
+    margin-left: 0px;
   }
 }
