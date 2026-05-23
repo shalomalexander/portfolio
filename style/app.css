@@ -1037,8 +1037,8 @@ h1 span {
   }
 
   .hero-visual {
-    order: -1;
-    min-height: 540px;
+    order: 0;
+    min-height: 460px;
   }
 
   .floating-proof {
@@ -1065,11 +1065,29 @@ h1 span {
   }
 
   .section-shell {
-    padding: 76px 0;
+    padding: 60px 0;
   }
 
   .timeline-item {
     grid-template-columns: 1fr;
+  }
+
+  .insight-card,
+  .experience-card,
+  .skill-cluster,
+  .contact-panel,
+  .contact-card,
+  .project-card {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.9rem, 6vw, 2.8rem);
   }
 }
 
@@ -1083,17 +1101,63 @@ h1 span {
 
   .hero {
     min-height: auto;
-    gap: 32px;
-    padding-top: 16px;
+    gap: 24px;
+    padding-top: 8px;
   }
 
   .hero-visual,
   .spotlight-card {
-    min-height: 400px;
+    min-height: 340px;
   }
 
   .portrait {
-    width: min(78%, 300px);
+    width: min(72%, 240px);
+  }
+
+  .hero-copy {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-intro {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  h1 {
+    max-width: none;
+    font-size: clamp(2.35rem, 11vw, 3.3rem);
+    padding: 4px 0 14px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+
+  .social-strip {
+    justify-content: center;
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .orbit span {
+    padding: 8px 10px;
+    font-size: 0.76rem;
+  }
+
+  .floating-proof {
+    position: static;
+    margin-top: 14px;
+  }
+
+  .floating-proof div {
+    min-width: 0;
+    width: 100%;
+    text-align: left;
   }
 
   .eyebrow-row,
@@ -1120,7 +1184,186 @@ h1 span {
     grid-template-columns: 1fr;
   }
 
+  .project-card,
+  .project-skeleton {
+    min-height: auto;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience-brand {
+    align-items: flex-start;
+  }
+
+  .experience-brand p {
+    line-height: 1.5;
+  }
+
+  .cluster-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .proof-card {
+    min-width: min(280px, 88vw);
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px 16px;
+  }
+
   .site-footer {
     padding-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  .site-header {
+    padding: 8px 12px 0;
+  }
+
+  .nav-shell,
+  .section-shell,
+  .site-footer,
+  .mobile-nav {
+    width: min(calc(100% - 16px), var(--max-width));
+  }
+
+  .nav-shell {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .brand-copy strong {
+    font-size: 0.82rem;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+
+  .menu-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .mobile-nav {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .section-shell {
+    padding: 48px 0;
+  }
+
+  .hero {
+    gap: 20px;
+  }
+
+  .hero-visual,
+  .spotlight-card {
+    min-height: 280px;
+    border-radius: 28px;
+  }
+
+  .portrait {
+    width: min(70%, 200px);
+  }
+
+  .orbit {
+    display: none;
+  }
+
+  .floating-proof {
+    gap: 10px;
+  }
+
+  .floating-proof div,
+  .insight-card,
+  .experience-card,
+  .skill-cluster,
+  .contact-panel,
+  .contact-card,
+  .project-card,
+  .proof-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.75rem, 8vw, 2.3rem);
+  }
+
+  .section-heading p,
+  .project-card p,
+  .contact-card p,
+  .experience-card ul {
+    font-size: 0.95rem;
+  }
+
+  .filter-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .filter-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-meta,
+  .project-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .experience-brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .experience-brand h3,
+  .proof-card h3,
+  .contact-card a {
+    font-size: 1.05rem;
+  }
+
+  .chip-cloud span,
+  .stack-tags span,
+  .project-tags span {
+    font-size: 0.82rem;
+    padding: 8px 10px;
+  }
+
+  .proof-rail {
+    gap: 14px;
+  }
+
+  .palette-panel {
+    margin-top: 10vh;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .palette-actions a {
+    padding: 14px;
+  }
+
+  .site-footer {
+    gap: 14px;
   }
 }
